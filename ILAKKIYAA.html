@@ -1,0 +1,100 @@
+<html>
+	<head>
+		 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+		 
+	<script type="text/javascript" language="javascript">
+
+		 $(document).ready(function() {
+
+
+			$("#login").click(function () {
+				var output ="Name="+$("#Sname").val()+"&Id="+$("#Sid").val()+"&Age="+$("#Sage").val()+"&Address="+$("#Saddress").val()+
+"&Number="+$("#Snumber").val();
+				var result ="Name="+$("#Stuname").val()+"&Id="+$("#Stuid").val()+"&Age="+$("#Stuage").val()+"&Address="+$("#Stuaddress").val()+
+"&Number="+$("#Stunumber").val();
+				var login ="Name="+$("#Studentname").val()+"&Id="+$("#Studentid").val()+"&Age="+$("#Studentage").val()+"&Address="+$("#Studentaddress").val()+"&Number="+$("#Studentnumber").val();
+				alert(output);
+				alert(result);
+				alert(login);
+
+	});
+$("#logout").click(function () {
+				$("#Sname").val('');
+				$("#Sid").val('');
+				$("#Sage").val('');
+				$("#Saddress").val('');
+				$("#Snumber").val('');
+
+			});
+$("#logout").click(function () {
+				$("#Stuname").val('');
+				$("#Stuid").val('');
+				$("#Stuage").val('');
+				$("#Stuaddress").val('');
+				$("#Stunumber").val('');
+
+			});
+$("#logout").click(function () {
+				$("#Studentname").val('');
+				$("#Studentid").val('');
+				$("#Studentage").val('');
+				$("#Studentaddress").val('');
+				$("#Studentnumber").val('');
+
+			});
+		 
+ });
+
+	
+	</script>
+	</head>
+	<body>
+		<table id="studentDetails" border="1">
+			<tr>
+				<td>Student Name</td>
+				<td>Student Id</td>
+				<td>Student Age</td>
+				<td>Student Address </td>
+				<td>Student Number</td>
+			</tr>
+			<tr>
+				<td><input type="text" id="Sname"/> </td>
+				<td><input type="text" id="Sid"/> </td>
+				<td><input type="text" id="Sage"/> </td>
+				<td><input type="text" id="Saddress"/></td>
+				<td><input type="text" id="Snumber"/> </td>
+			</tr>
+			<tr>
+				<td><input type="text" id="Stuname"/> </td>
+				<td><input type="text" id="Stuid"/> </td>
+				<td><input type="text" id="Stuage"/> </td>
+				<td><input type="text" id="Stuaddress"/></td>
+				<td><input type="text" id="Stunumber"/> </td>
+			</tr>
+			<tr>
+				<td><input type="text" id="Studentname"/> </td>
+				<td><input type="text" id="Studentid"/> </td>
+				<td><input type="text" id="Studentage"/> </td>
+				<td><input type="text" id="Studentaddress"/></td>
+				<td><input type="text" id="Studentnumber"/> </td>
+			</tr>
+
+			
+			</table>
+
+			<br><br>
+			<input type="button" id="login"  value="login" />
+			<input type="button" id="logout" value="logout" />
+			
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
